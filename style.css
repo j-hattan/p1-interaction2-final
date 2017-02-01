@@ -1,0 +1,369 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+/* #header {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 15;
+    background: black;
+    text-align: center;
+    float: left;
+}
+
+#head-text {
+    font-size: ;
+    font-weight: 400;
+    letter-spacing: 3;
+    width: 142px;
+    float: left;
+    position: relative;
+    left: 25%;
+}
+
+#head-text2 {
+    font-size: ;
+    font-weight: 200;
+    letter-spacing: ;
+    width: 142px;
+    float: left;
+    position: relative;
+    left: 24%;
+} */
+
+.container {
+    float: left;
+    display: inline-block;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Clear Float */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/* end of cf */
+
+/*.container {
+    width: 480px;
+}*/
+
+body {
+    margin: 0;
+    font-family: "Gibson", Helvetica, sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+.icon1 {
+  z-index: 10;
+  position: relative;
+  top: 36px;
+  left: 58px;
+  font-size: 60px;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+}
+
+.icon2 {
+  z-index: 10;
+  position: relative;
+  top: 36px;
+  left: 59px;
+  font-size: 60px;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+}
+
+.location-1 {
+  z-index: 9;
+  position: relative;
+  top: -105px;
+  left: 16px;
+    width: 80%;
+    height: 60px;
+    float: left;
+    text-align: center;
+}
+
+.location-2 {
+  z-index: 9;
+  position: relative;
+  top: -145px;
+  left: 16px;
+    float: left;
+    text-align: center;
+    width: 80%;
+}
+
+.obj-container {
+  width: 180px;
+  height: 200px;
+  float: left;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.object-1 {
+  float: left;
+  transform: translate(25%, -30%);
+  width: 40%;
+  height: 90%;
+}
+
+.object-2 {
+  float: left;
+  background: salmon;
+  transform: translate(25%, -30%);
+  width: 40%;
+  height: 90%;
+}
+
+#footer {
+  width: 100%;
+  background: blue;
+}
+
+/* Object Colors */
+
+#color-1 {
+    background: #a3431b;
+}
+
+#color-2 {
+    background: #c8885c;
+}
+
+#color-3 {
+    background: #d7928d;
+}
+
+#color-4 {
+    background: #3b3c50;
+}
+
+#color-5 {
+    background: #892525;
+}
+
+#color-6 {
+    background: #e5d7cc;
+}
+
+#color-7 {
+    background: #9e2723;
+}
+
+#color-8 {
+    background: #120d09;
+}
+
+#color-9 {
+    background: #eadec4;
+}
+
+#color-10 {
+    background: #e7e7e7;
+}
+
+#color-11 {
+    background: #2e3444;
+}
+
+#color-12 {
+    background: #c53f48;
+}
+
+#color-13 {
+    background: #936e66;
+}
+
+#color-14 {
+    background: #e5d7cc;
+}
+
+#color-15 {
+    background: #f07263;
+}
+
+#color-16 {
+    background: #151918;
+}
+
+#color-17 {
+    background: #a3a2a0;
+}
+
+#color-18 {
+    background: #81594f;
+}
+
+#color-19 {
+    background: #c0c0ca;
+}
+
+#color-20 {
+    background: #854d2c;
+}
+
+#color-21 {
+    background: #6c7596;
+}
+
+#color-22 {
+    background: #e9e8e4;
+}
+
+#color-23 {
+    background: #c7c0ae;
+}
+
+#color-24 {
+    background: #251a14;
+}
+
+#color-25 {
+    background: #3f5b67;
+}
+
+#color-26 {
+    background: #1f3542;
+}
+
+#color-27 {
+    background: #d19f7a;
+}
+
+#color-28 {
+    background: #8d181e;
+}
+
+#color-29 {
+    background: #ded8da;
+}
+
+#color-30 {
+    background: #18130d;
+}
+
+#color-31 {
+    background: #af371f;
+}
+
+#color-32 {
+    background: #e9e4e0;
+}
+
+#color-33 {
+    background: #e78256;
+}
+
+#color-34 {
+    background: #384653;
+}
+
+#color-35 {
+    background: #848a98;
+}
+
+#color-36 {
+    background: #f9ead5;
+}
+
+#color-37 {
+    background: #7a7e65;
+}
+
+#color-38 {
+    background: #dfdae0;
+}
+
+#color-39 {
+    background: #d1a87d;
+}
+
+#color-40 {
+    background: #a5a29d;
+}
+
+#color-41 {
+    background: #46562f;
+}
+
+#color-42 {
+    background: #603725;
+}
+
+#color-43 {
+    background: #cb785a;
+}
+
+#color-44 {
+    background: #182224;
+}
+
+#color-45 {
+    background: #dad4e2;
+}
+
+#color-46 {
+    background: #373a1f;
+}
+
+#color-47 {
+    background: #be959b;
+}
+
+#color-48 {
+    background: #5a5128;
+}
+
+#color-49 {
+    background: #6b5a2e;
+}
+
+#color-50 {
+    background: #a27f61;
+}
+
+/* Clear Float */
+
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
